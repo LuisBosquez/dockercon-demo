@@ -1,0 +1,3 @@
+web:
+  build: .
+  command: /usr/bin/supervisord
