@@ -1,4 +1,8 @@
-﻿CREATE DATABASE CommentsDb;
+﻿IF EXISTS(select * from sys.databases where name='CommentsDb')
+DROP DATABASE CommentsDb
+
+
+CREATE DATABASE CommentsDb;
 
 USE CommentsDb;
 
