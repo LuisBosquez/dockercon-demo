@@ -14,12 +14,14 @@ GO
 CREATE TABLE Comments (
 	id int IDENTITY PRIMARY KEY,
 	author nvarchar(30) NOT NULL,
-	text nvarchar(4000)
+	text nvarchar(4000),
+	species varchar(32) --political correctness
 )
 GO
 
-INSERT INTO Comments (author, text)
+INSERT INTO Comments (author, text, species)
 VALUES
-('Luis','Hello DockerCon!'),
-('Luis','I''m a whale.')
+('Luis','Hello DockerCon!', 'whale'),
+('Luis','I''m a whale.', 'whale'),
+('Someone else','and I''m something else.', 'octopus')
 GO
