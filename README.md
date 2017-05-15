@@ -1,5 +1,5 @@
 # Aquarium App Demo
-Demos for DockerCon
+Demos for DockerCon. Uses SQL Server with `tedious`, `express.js`, `ReactJS` and `Node.js`.
 
 ## Installation Steps
 ---
